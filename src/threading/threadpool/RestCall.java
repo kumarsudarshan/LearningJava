@@ -19,7 +19,7 @@ public class RestCall {
         ExecutorService service = Executors.newFixedThreadPool(3);
         Future<String> future = null;
         for (URLProcessor url : urls) {
-             future = service.submit(url);
+            future = service.submit(url);
             System.out.println(future.get());
         }
         service.shutdown();
@@ -36,8 +36,8 @@ public class RestCall {
                 return getUrlDetails(url);
             });
             System.out.println(completableFuture.get());
+        }
     }
-}
 
     private static <U> String getUrlDetails(String url) {
         Map<String, String> urlMap = new HashMap<>();
@@ -49,9 +49,9 @@ public class RestCall {
         urlMap.put("url6", "{\"result\" : \"hello url6\"}");
         return urlMap.get(url);
     }
-    }
+}
 
-    class URLProcessor implements Callable<String> {
+class URLProcessor implements Callable<String> {
     String url;
 
     URLProcessor(String url) {
