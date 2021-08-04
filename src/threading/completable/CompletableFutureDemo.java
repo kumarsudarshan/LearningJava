@@ -33,15 +33,13 @@ public class CompletableFutureDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // example of callable future and problems with blocking
         // in this case, it will behave like
-        callableFuture();
+//        callableFuture();
 
         // completable future
         completableFuture();
 
         // completable async future
-        completableFutureAsync();
-
-
+//        completableFutureAsync();
     }
 
     public static void completableFuture() {
@@ -75,8 +73,10 @@ public class CompletableFutureDemo {
                 .thenApply(order -> order.dispatch(order))
                 .exceptionally(e -> failedOrder()) // if any exceptions come between the above methods, it will come here.
                 .thenAccept(order -> order.sendEmail(order));
+                // .thenCombine(); // we can combine with different CompletableFuture
 
-
+        cpuBound.shutdown();
+        ioBound.shutdown();
     }
 
     private static Order failedOrder() {
