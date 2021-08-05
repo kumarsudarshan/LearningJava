@@ -24,9 +24,7 @@ We cannot combine multiple futures.
 
  */
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 import java.util.concurrent.*;
 
 public class CompletableFutureDemo {
