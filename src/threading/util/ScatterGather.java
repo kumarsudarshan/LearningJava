@@ -9,10 +9,6 @@ Write code to make IO calls (HTTP) to N sources, aggregate the response and retu
 public class ScatterGather {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
-        implementScatterGather();
-    }
-
-    public static void implementScatterGather() throws InterruptedException, ExecutionException, TimeoutException {
         Map<String, Integer> urlMap = new HashMap<>();
         urlMap.put("amazon", 1);
         urlMap.put("flipkart", 2);
@@ -51,7 +47,7 @@ public class ScatterGather {
             tasks[i++] = task;
         }
 
-        CompletableFuture<Void> allTasks = CompletableFuture.allOf(tasks);
+        CompletableFuture<Void> allTasks = CompletableFuture.allOf(tasks); // returns only when all the submitted tasks completed
         allTasks.get(3, TimeUnit.SECONDS); // wait for all tasks to complete but for 3 seconds only
         return prices;
     }
@@ -75,7 +71,11 @@ class Task implements Runnable {
     public void run() {
         // make http call to get price, for eg generating random
         int price = new Random().nextInt(1000);
-
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         prices.put(this.url, price);
         latch.countDown(); // add price and countdown, though if added after timeout, then ignored.
     }
