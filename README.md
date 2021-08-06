@@ -14,3 +14,4 @@
 10. [CompletableFuture](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/completable/CompletableFutureDemo.java)
 11. [How to timeout a thread](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/TimeoutThread.java)
 12. [Producer Consumer pattern](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/ProducerConsumer.java)
+13. [Scatter Gather Problem (Similar to URL details via rest call (above))](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/ScatterGather.java)
