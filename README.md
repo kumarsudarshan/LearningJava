@@ -12,4 +12,5 @@
 8. [Get URL details via rest call](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/threadpool/RestCall.java)
 9. [Callable future](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/threadpool/CallableFuture.java)
 10. [CompletableFuture](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/completable/CompletableFutureDemo.java)
-11. [How to timout a thread](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/TimeoutThread.java)
+11. [How to timeout a thread](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/TimeoutThread.java)
+12. [Producer Consumer pattern](https://github.com/kumarsudarshan/LearningJava/blob/master/src/threading/util/ProducerConsumer.java)
