@@ -1,5 +1,9 @@
 # LearningJava
 
+### Map
+
+1. [Sort hashmap on values](https://github.com/kumarsudarshan/LearningJava/blob/master/src/map/SortHashMapValues.java)
+
 ### Multi Threading
 
 1. [Print even odd number sequentially]()
@@ -20,4 +24,5 @@
 
 #### Streams
 
-1. [IntStream utility](https://github.com/kumarsudarshan/LearningJava/blob/master/src/streams/StreamDemo.java)
+1. [IntStream utility](https://github.com/kumarsudarshan/LearningJava/blob/master/src/streams/IntStreamDemo.java)
+2. [Stream utility](https://github.com/kumarsudarshan/LearningJava/blob/master/src/streams/StreamDemo.java)
