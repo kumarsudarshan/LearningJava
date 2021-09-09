@@ -97,6 +97,13 @@ public class IntStreamDemo {
         // Generally all streams do sequentially, but for doing it parallely, we can use parallel (when we have more items in list)
         Map<Integer, List<Employee>> empBySal1 = employees.stream().parallel().collect(Collectors.groupingBy(emp -> emp.salary));
         System.out.println(empBySal1);
+
+        // find duplicates in list
+        List<Integer> list = Arrays.asList(12, 34, 34, 54, 76, 76);
+        Set<Integer> result = new HashSet<>();
+        Set<Integer> auxSet = result;
+        result = list.stream().filter(i -> !auxSet.add(i)).collect(Collectors.toSet());
+        System.out.println(result);
     }
 }
 
