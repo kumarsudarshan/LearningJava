@@ -107,7 +107,6 @@ public class IntStreamDemo {
     }
 }
 
-
 class Employee {
     String name;
     int salary;
