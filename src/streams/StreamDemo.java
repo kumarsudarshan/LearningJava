@@ -1,7 +1,5 @@
 package streams;
 
-import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
-
 import java.util.*;
 import java.util.stream.Collectors;
 

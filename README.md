@@ -27,3 +27,7 @@
 
 1. [IntStream utility](https://github.com/kumarsudarshan/LearningJava/blob/master/src/streams/IntStreamDemo.java)
 2. [Stream utility](https://github.com/kumarsudarshan/LearningJava/blob/master/src/streams/StreamDemo.java)
+
+### Others questions:
+
+1. [Immutable class]()
