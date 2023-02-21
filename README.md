@@ -30,4 +30,4 @@
 
 ### Others questions:
 
-1. [Immutable class]()
+1. [Immutable class](https://github.com/kumarsudarshan/LearningJava/blob/master/src/others/Immutable.java)
